@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Profile</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!-- ---google-font----- -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- ---header section----- -->
+<header>
+    <a href="#" class="logo"><span>E</span>ethm</a>
+    <ul class="navbar">
+    <li><a href="#" class="active">about</a></li>
+    <li><a href="#">service</a></li>
+    <li><a href="#">education</a></li>
+    <li><a href="mailto:work.nurse.reach12@gmail.com">contact</a></li>
+    </ul>
+    <div class="menu-btn">
+        <span>Menu</span>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+</header>
+
+<!-- --home section----- -->
+<section class="home">
+    <div class="home-text">
+    <span>Nurse & Public Health Partitoner</span>
+<h1>Rachel Q. Tengbeh</h1>
+<p>I'm a general nurse and health partioner, a very dedicated to boost of professon seeing to the health needs of living soul</p>
+<div class="d-btn">
+    <a href="/pub/img/resume.pdf" download class="btn">Download CV</a>
+
+    <a href="mailto:work.nurse.reach12@gmail.com"   target="_blank" class="btn -n">Hire Me</a>
+</div>
+</div>
+<div class="home-img">
+    <img src="pub/profile.jpg" alt="My Profile">
+
+</div>
+</section>
+<div class="share">
+    <p>Check out my:</p>
+    <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-instagram' ></i></a>
+        <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+        <a href="https://www.linkedin.com/in/rachel-tengbeh-945519268" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+    </div>
+
+</div>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ---custom js file link----- -->
+    <script>
+        let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open')
+};
+
+const sr = ScrollReveal ({
+    distance: '40px',
+    duration: 2500,
+    reset: true
+});
+
+sr.reveal('.logo',{delay:200, origin: 'left'});
+sr.reveal('.navbar',{delay:400, origin: 'top'});
+sr.reveal('.menu-btn',{delay:520, origin: 'right'});
+    </script>
+</body>
+</html>
